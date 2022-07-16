@@ -10,10 +10,10 @@ public class RegistrationEdge extends RegistrationChrome {
     @Test
     @Order(1)
     public void openBrowser(){
-        System.setProperty("webdriver.edge.driver", "D:/Itstep/Selenium/msedgedriver.exe"); // указали путь к драйверу
-        driver = new EdgeDriver();// Создаем объект
-        driver.get(baseUrl);//Переход по заданному адресу
-        driver.manage().window().maximize(); //расширили окно
+        // Указать путь к драйверу.
+        System.setProperty("webdriver.edge.driver", "D:/Itstep/Selenium/msedgedriver.exe");
+        driver = new EdgeDriver();// Создать объект.
+        driver.get(baseUrl);// Перейти по заданному адресу.
+        driver.manage().window().maximize(); // Расширить окно.
     }
 }
-
